@@ -297,7 +297,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/ja
  object, it shall no longer call any methods on the returned ControlPoint objects.
  
  That is, any mutation of the shape group graph referenced by this object invalidates the
- ControlPoint objects returned by any preceding getControlPoints call. This is true even if the mutation occurred
+ ControlPoint objects returned by any preceding createControlPoints call. This is true even if the mutation occurred
  through the returned ControlPoint objects themselves. For example, after calling <code>move</code> on one of the
  returned ControlPoint objects, a client is
  no longer allowed to call <code>getLocation</code> or <code>remove</code> on any of the returned ControlPoint objects,
